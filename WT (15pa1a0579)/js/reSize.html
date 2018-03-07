@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title></title>
+   
+  </head>
+  <body onresize="Rsize()">
+    <header>
+      <h3>Resize the Tab to Observe Resolution</h3>
+    </header>
+    <main>
+     <p id="resize"></p>
+    </main>
+    <footer>
+      
+    </footer>
+    <script>
+     function Rsize(){
+          var w=window.outerWidth;
+          var h=window.outerHeight;
+          var output= "Resolution "+w+"X"+h;
+          document.getElementById("resize").innerHTML= output;
+      }
+    </script>
+  </body>
+</html>

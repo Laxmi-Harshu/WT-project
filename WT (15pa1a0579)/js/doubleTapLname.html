@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title></title>
+   
+  </head>
+  <body>
+    <header>
+      <h1>Double Tap on Fname to Display Lname</h1>
+    </header>
+    <main>
+      First Name :
+      <input type="text" id="Fn" name="fName" placeholder="Enter FirstName" onkeyup="checkQ()">
+      <br>Last Name :
+      <input type="text" id="Ln" name="lName" placeholder="Enter LastName">
+      <p id= "check" ondblclick="checkP()" style="color:Blue">:-)</p>
+    </main>
+    <footer>
+      
+    </footer>
+    <script>
+     function checkQ(){
+          var p= document.getElementById("Fn").value;
+          document.getElementById("check").innerHTML=p;
+          
+      }
+      function checkP(){
+          var p= document.getElementById("Ln").value;
+          document.getElementById("check").innerHTML=p;
+          document.getElementById("check").style.color="green";
+      }
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="js8.css">
+  </head>
+  <body>
+    <header>
+      <h2>Student_Registration_Form</h2>
+    </header>
+    <main>
+    <form name="Student_Registration_Form" action="#">
+      <label for="fname"><sup style ="color:red" >*</sup>FIRST NAME : </label>
+      <input type="text" id="fname" name="Fname" placeholder="First Name" onkeyup="checkLetters()" required>
+      <br>
+      <label for="lname">LAST NAME : </label>
+      <input type="text" id="lname" name="Lname" placeholder="Last Name">
+      <br>
+      <label for="uname">USER NAME : </label>
+      <input type="text" id="uname" name="Uname" placeholder="UserName" required onkeyup="checkUser()" maxlength="10">
+      <br>
+      <label for="pswd">PASSWORD : </label>
+      <input type="password" id="pswd" name="pswd" placeholder="Password" required>
+      <br>
+      <label for="gnder" >GENDER : </label>
+      <input type="radio" name="gender" id="gnder" required>Male
+      <input type="radio" name="gender" id="gnder">Female
+      <br>
+      <label for="regdno" >REGD NO : </label>
+      <input type ="text" id="regdno" name="reg" placeholder="DDPA1ADDLL" maxlength="10" onkeyup="regdCheck(this)">
+      <br>
+      <label for="DOB" >DATE OF BIRTH : </label>
+      <input type="date" id="DOB" name="dob" required>
+      <br>
+      <label for="addres" ><sup style ="color:red" >*</sup>ADDRESS : </label>
+      <textarea rows="1" cols="30" name="adress" id="addres" required ></textarea>
+      <br>
+      <label for="phno" >PHONE NO : </label>
+      <input type="tel" id="phno" name="phNo"  minlength="10" maxlength="10" required>
+      <br>
+      <label for="pincode" >ZIP CODE : </label>
+      <input type="tel" id="pincode" name="pincode" placeholder="Zip Code" minlength="6" maxlength="6" onkeyup="checkNumbers(this)" required>
+      <br>
+      <label for="avg" >AVERAGE MARKS : </label>
+      <input type="number" id="avg" name="average" placeholder="0.00" step="0.01" min="0" max="100">
+      <br>
+      <label for="email" >EMAIL : </label>
+      <input type="email" id="email" name="email" placeholder="sometext@domain.com" onchange="checkEmail(this)" required>
+      <br>
+      <input type="submit" name="submit" >
+    </form>  
+    </main>
+    
+    <script>
+      //LETTERS validation
+      function checkLetters()
+      {  
+        var text=document.getElementById("fname").value;
+        var letters = /^[A-Za-z]+$/;  
+        if(text.match(letters))  
+        {  
+          return true;  
+        }
+        else{
+          alert("Name should contain Alphabets Only");
+          return false;
+        }
+      } 
+      
+      function checkUser()
+      {  
+        var text=document.getElementById("fname").value;
+        var letters = /^[A-Za-z]+$/;  
+        if(text.match(letters))  
+        {  
+          return true;  
+        }
+        else{
+          alert("Name should contain Alphabets Only");
+          return false;
+        }
+      } 
+     //REGD NO validation
+      function regdCheck(ip){
+        var input = ip.value;
+
+        input = input.replace(/[\W\s\._\-]+/g, '');
+        var i,len,split = 4;
+        var chunk = [];
+   
+        for(i = 0, len = input.length; i < len; i += split) {
+          if(i<2 || i>5 || i>7){
+            split=2;
+          }
+          else if(i=>2 && i<=5){
+           split=4;
+          }
+          chunk.push( input.substr( i, split ) );
+        }
+  
+        ip.value=chunk.join("").toUpperCase();
+      }
+      //NUMBER validation
+      function checkNumbers(ip)  
+      {  
+        var numbers = /^[0-9]+$/;  
+        if(ip.value.match(numbers))  
+        {  
+          return true;  
+        }  
+        else  
+        {  
+          alert('Please input NUMBERS only');  
+          document.ip.focus();  
+          return false;  
+        }  
+      }
+      //Email validation
+      function checkEmail(ip)  
+      {  
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+        if(ip.value.match(mailformat))  
+        {  
+          document.ip.focus();  
+          return true;  
+        }  
+        else  
+        {  
+          alert("You have entered an invalid Email address!");  
+          document.ip.focus();  
+          return false;  
+        }  
+      }
+    </script>
+  </body>
+</html>

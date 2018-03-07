@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title></title>
+   
+  </head>
+  <body>
+    <header>
+      <h1>Finding Simple Interest</h1>
+    </header>
+    <main>
+      
+      <input type="text" id="P" name="p" placeholder="Principal" ><br>
+      <input type="text" id="T" name="t" placeholder="Time in Years" ><br>
+      <input type="text" id="R" name="r" placeholder="Rate of Interest" >
+      
+      <button onclick="checkP()" >check</button>
+      
+      <p id="check" style="color:red">N/A</p>
+    </main>
+    <footer>
+      
+    </footer>
+    <script>
+     
+      function checkP(){
+          var p= Number(document.getElementById("P").value);
+          var t= Number(document.getElementById("T").value);
+          var r= Number(document.getElementById("R").value);
+          if(p=='' || t=='' || r==''){
+            document.getElementById("check").innerHTML= "Plz give all values";
+          }
+          else{
+            var I =Number (p*t*r)/100;
+            document.getElementById("check").innerHTML= "Simple Interest Is " + I;
+            document.getElementById("check").style.color= "blue";
+          }
+      }
+      
+    </script>
+  </body>
+</html>

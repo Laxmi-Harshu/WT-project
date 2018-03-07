@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title></title>
+   
+  </head>
+  <body>
+    <header>
+      <h1>Convert to UpperCase</h1>
+    </header>
+    <main>
+      
+      <input type="text" id="st" name="Alphabet" placeholder="Enter String" onkeyup="checkP()">
+      <p id= "check" style="color:Blue">Lakshmi</p>
+    </main>
+    <footer>
+      
+    </footer>
+    <script>
+     
+      function checkP(){
+          var p= document.getElementById("st").value;
+          var q=p.toUpperCase();
+          document.getElementById("check").innerHTML=q;
+          
+      }
+      
+    </script>
+  </body>
+</html>

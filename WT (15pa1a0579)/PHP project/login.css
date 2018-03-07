@@ -1,0 +1,63 @@
+.a
+{
+  border-top-style: outset;
+  border-top-width: 4px;
+  border-top-color:orange;
+  background-color:Grey;
+  text-align:center;
+  padding-bottom:20px;
+  padding-top:10px;
+  margin-right:0;
+  color:white;
+}
+.h li{
+  display:inline;
+  padding:10px;
+  text-decoration:none;
+  color:white;
+}
+a
+{
+ text-decoration:none;
+ color:white;
+}
+.har{
+	background-image:url("cat2.jpg");
+	width:1300px;
+    height:630px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-left:0;
+    padding-top:190px;
+    padding-left:32px;	
+}
+.ha{
+	width: 300px;
+	height: 370px;
+	background-color:rgba(0,0,0,0.5);
+	margin:0 auto;
+	margin-top:20px;
+	padding-top:20px;
+	padding-right:30px;
+	color:white;
+	font-weight:bold;
+	font-size:15px;
+	border-radius:15px;
+}
+
+.hs{
+	background-color:green;
+	width:200px;
+	padding-top:5px;
+	padding-bottom:5px;
+    color:white;
+}
+.hv{
+	background-color:blue;
+	width:200px;
+	margin-left:0;
+	padding-left:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	color:white;
+}

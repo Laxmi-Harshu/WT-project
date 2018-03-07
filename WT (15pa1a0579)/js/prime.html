@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title></title>
+   
+  </head>
+  <body>
+    <header>
+      <h1>Prime Checker</h1>
+    </header>
+    <main>
+      <label for="number">Number : </label>
+      
+      <input type="text" id="number" name="num" placeholder="Enter Number" onkeyup="checkP()">
+      
+      <p id="check" style="color:red">N/A</p>
+    </main>
+    <footer>
+      
+    </footer>
+    <script>
+     
+      function checkP(){
+        if(document.getElementById("number").value == ''){
+          document.getElementById("check").innerHTML="Give any Integer";
+        }
+        else{
+          var n= Number(document.getElementById("number").value);
+            
+          if(n==2 || n==3 || n==5 || n==7){
+            document.getElementById("check").innerHTML="PRIME";
+            document.getElementById("check").style.color="green";
+          }
+          else if(n==1 ||n%2==0 || n%3==0 || n%5==0 || n%7==0){
+            document.getElementById("check").innerHTML="NOT PRIME";
+          }
+          else{
+            document.getElementById("check").innerHTML="PRIME";
+            document.getElementById("check").style.color="green";
+          }
+        }
+      }
+      
+    </script>
+  </body>
+</html>

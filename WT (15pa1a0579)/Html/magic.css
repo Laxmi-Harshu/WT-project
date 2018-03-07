@@ -1,0 +1,56 @@
+.a
+{
+  background-color:#FA8072;
+  text-align:center;
+  padding-bottom:20px;
+  color:white;
+}
+a
+{
+ text-decoration:none;
+}
+.s{
+  color:white;
+}
+h1
+{
+  margin-bottom:5px;
+}
+.magic
+{
+  background-color:white;
+  margin-left:20%;
+  margin-right:20%;
+  padding:15px;
+  margin-top:10px;
+}
+.b
+{
+  background-image:url('stardust.png');
+  margin-top:0px;
+  padding-top:5px;
+}
+h3
+{
+  color:green;
+  border-bottom:1px solid grey;
+  margin-bottom:0px;
+}
+img
+{
+  
+  width:130px;
+  height:130px;
+  padding-left:15px;
+  padding-top:15px;
+}
+h2
+{
+  text-align:center;
+  color:green;
+}
+.c
+{
+  text-align:center;
+}
+

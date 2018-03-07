@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE petadoption [
+
+<!ELEMENT petadoption (pet+)>
+<!ELEMENT pet (title,gender,age,description?,contactinfo)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT contactinfo (name,address,phn,email)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phn (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+]>
+<petadoption>
+    <pet category="Dog">
+        <title dogname="en">xyz</title>
+        <gender>male</gender>
+        <age>5</age>
+        <description>ghdjhxbgjgkksgjf</description>
+        <contactinfo>
+            <name personname="en">ram</name>
+            <address city="en">HYD</address>
+            <phn>766984</phn>
+            <email>ghfjd@gmail.com</email>
+        </contactinfo>
+    </pet>
+    <pet category="cat">
+        <title dogname="en">xyzabc</title>
+        <gender>female</gender>
+        <age>5</age>
+        <description>ghdjhxbgjgkksgjf</description>
+        <contactinfo>
+            <name personname="en">raju</name>
+            <address city="en">BNGLR</address>
+            <phn>7669865844</phn>
+            <email>jkfjd@gmail.com</email>
+        </contactinfo>
+    </pet>
+    <pet category="birds">
+        <title dogname="en">xyzabcd</title>
+        <gender>male</gender>
+        <age>5</age>
+        <description>ghdjhxbgjgkksgjf</description>
+        <contactinfo>
+            <name personname="en">ram</name>
+            <address city="en">HYD</address>
+            <phn>7676846984</phn>
+            <email>hfhjkkjd@gmail.com</email>
+        </contactinfo>
+    </pet>
+</petadoption>
+
