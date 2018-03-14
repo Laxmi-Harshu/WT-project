@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-stylesheet type="text/xsl" href="petadoption.xsl"?>
+<petadoptions>
+  <homepets>
+    <pettype>Dog</pettype>
+    
+    <gender>Male</gender>
+    <age>5</age>
+    <description>They have been bred by humans for a long time, and were the first animals ever to be domesticated.</description>
+    <name>John</name>
+    <address>Hyd</address>
+    <phn>967690</phn>
+    <email>John@gmail.com</email>
+  </homepets>
+  
+  <homepets>
+    <pettype>Cat</pettype>
+    
+    <gender>Female</gender>
+    <age>4</age>
+    <description>The domestic cat is a small, typically furry, carnivorous mammal.</description>
+    <name>James</name>
+    <address>Banglr</address>
+    <phn>83850670</phn>
+    <email>James@gmail.com</email>
+  </homepets>
+  
+  <homepets>
+    <pettype>Pigeon</pettype>
+    
+    <gender>Female</gender>
+    <age>6</age>
+    <description>Pigeons and doves constitute the bird family Columbidae and the order Columbiformes, which includes about 42 genera and 310 species.</description>
+    <Contactinfo>
+    <name>Hermoine</name>
+    <address>Hogwarts</address>
+    <phn>6548740</phn>
+    <email>Hermoine@gmail.com</email>
+    </Contactinfo>
+  </homepets>
+  <homepets>
+    <pettype>Rabit</pettype>
+    
+    <gender>Male</gender>
+    <age>6</age>
+    <description>Well cared-for indoor rabbits can live 7-10 years, and some live into their teens.</description>
+    <Contactinfo>
+    <name>Ron</name>
+    <address>hyd</address>
+    <phn>899988990</phn>
+    <email>Ron@gmail.com</email>
+  </Contactinfo>
+  </homepets>
+
+
+<homepets>
+    <pettype>Poodle</pettype>
+    
+    <gender>Male</gender>
+    <age>10</age>
+    <description>Poodles are bred in a variety of sizes, distinguished by adult shoulder height.</description>
+    <Contactinfo>
+    <name>Harry</name>
+    <address>hyd</address>
+    <phn>58976990</phn>
+    <email>Harry@gmail.com</email>
+  </Contactinfo>
+  </homepets> 
+
+<homepets>
+    <pettype>Ragdoll</pettype>
+    
+    <gender>Male</gender>
+    <age>10</age>
+    <description>The Ragdoll is a cat breed with blue eyes and a distinct colourpoint coat.</description>
+    <Contactinfo>
+    <name>Serius</name>
+    <address>Chennai</address>
+    <phn>88876990</phn>
+    <email>Serius@gmail.com</email>
+    </Contactinfo> 
+  </homepets> 
+
+</petadoptions>

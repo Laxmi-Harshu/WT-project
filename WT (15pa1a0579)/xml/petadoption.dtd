@@ -1,0 +1,9 @@
+<!ELEMENT petadoptions (pettype,gender,age,description,personname,address,phn,email)>
+<!ELEMENT pettype (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT personname (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phn (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
